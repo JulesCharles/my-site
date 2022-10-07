@@ -9,7 +9,7 @@
     src: url(./assets/fonts/Raleway-SemiBold.ttf)
 }
 
-html {
-  overflow: hidden;
+body {
+  background-color: black;
 }
 </style>
