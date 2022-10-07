@@ -1,8 +1,20 @@
 <template>
   <div class="home-ctn">
-    <div class="text"><span>{{ presentationTexte.hello['en-US']}}</span>
-      <span class="text-color">{{ presentationTexte.name['name-NAME']}}</span>
-      <span><br>{{presentationTexte.front['front-FRONT']}}<br></span></div>
+    <div class="text">
+      <span>
+        {{ presentationTexte.hello['en-US']}}
+      </span>
+      <span class="text-color">
+        {{ presentationTexte.name['name-NAME']}}
+      </span>
+      <span>
+        <br>{{presentationTexte.front['front-FRONT']}}
+        <span>
+          {{presentationTexte.web['web-WEB']}}
+        </span>
+        <br>
+      </span>
+    </div>
   </div>
 </template>
 
@@ -22,7 +34,10 @@ export default {
           'name-NAME': 'Jules Charles.'
         },
         front: {
-          'front-FRONT': "I'm a front-end web developer"
+          'front-FRONT': "I'm a front-end"
+        },
+        web: {
+          'web-WEB': 'web developer'
         }
       }
     }
@@ -71,6 +86,11 @@ span:nth-child(2) {
 span:nth-child(3) {
   animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
 @keyframes fade-in {
   100% {
     opacity: 1;
