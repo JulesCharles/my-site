@@ -14,11 +14,15 @@
         </span>
         <br>
       </span>
+      <span>
+        <BtnExplore />
+      </span>
     </div>
 </template>
 
 <script>
-import BackGround from '../backGround.vue'
+import BackGround from '../welcome/backGround.vue'
+import BtnExplore from './BtnExplore.vue'
 export default {
   data  () {
     return {
@@ -38,7 +42,7 @@ export default {
       }
     }
   },
-  components: { BackGround }
+  components: { BackGround, BtnExplore }
 }
 </script>
 
@@ -84,6 +88,10 @@ span:nth-child(3) {
 }
 
 span:nth-child(4) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
   animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
