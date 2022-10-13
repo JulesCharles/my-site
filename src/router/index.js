@@ -1,3 +1,4 @@
+import About from '@/pages/about/About.vue'
 import ViewProject from '@/views/ViewProject.vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
@@ -10,8 +11,8 @@ const routes = [
   },
   {
     path: '/about',
-    name: 'viewProject',
-    component: ViewProject
+    name: 'about',
+    component: About
   },
   {
     path: '/project',
