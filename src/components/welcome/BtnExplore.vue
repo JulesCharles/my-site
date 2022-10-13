@@ -1,11 +1,11 @@
 <template>
-<router-link to = '/project'>
+<a href="./index.html#project" class="header__link">
 <div class="btn-explo">
   <div class="texte">{{explore['en-US']}}
     <img src="../../assets/Groupe4136.png" />
   </div>
 </div>
-</router-link>
+</a>
 </template>
 
 <script>

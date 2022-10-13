@@ -1,25 +1,21 @@
 <template>
   <div class="project-page">
-    <router-link to = '/'>
-      <div class="return-home">HOME</div>
-    </router-link>
+    <NavBar />
   </div>
 </template>
 
 <script>
+import NavBar from '@/components/navbar/NavBar.vue'
 export default {
-
+  components: { NavBar }
 }
 </script>
 
 <style lang="css" scoped>
 
-.project-page {
+/* .project-page {
   animation: fadeInAnimation ease 2s;
-}
-.return-home {
-  color: white;
-}
+} */
 
 @keyframes fadeInAnimation {
     0% {

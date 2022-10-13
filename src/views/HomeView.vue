@@ -1,19 +1,16 @@
 <template>
   <div class="home-ctn">
     <WelcomeCompo />
-    <ViewProject />
   </div>
 </template>
 
 <script>
 import WelcomeCompo from '../components/welcome/WelcomeCompo.vue'
-import ViewProject from './ViewProject.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    WelcomeCompo,
-    ViewProject
+    WelcomeCompo
   }
 }
 </script>
